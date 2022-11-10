@@ -19,6 +19,10 @@ section {
     padding: 40px 0 0 0;
 }
 
+.date {
+    margin: 0 0 0 30px;
+    }
+
 /* .aboutMe inherits styling of div */
 .hero {
     width: 100%;
@@ -35,7 +39,7 @@ section {
 }
 
 .hero-info {
-    margin: 30px;
+    margin: 0 0 0 30px;
     max-width: 300px;
 }
 
@@ -77,7 +81,7 @@ section {
 
 .button {
     border: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 15px;
     background: #ef866c;
     width: 100px;
@@ -180,6 +184,7 @@ nav {
 .logo { 
     height: 45px;
     padding-bottom: 10px;
+    margin-left: 25px;
 }
 
 
