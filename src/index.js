@@ -12,7 +12,11 @@ function toggleButton() {
 
 hamburgerButton.addEventListener('click', toggleButton)
 
-
 function displayFunny() {
-    alert("At this stage of my development the HIRE ME button is only here for comedic purposes. However you can contact me via the contact page")
+    alert("Thank you for confidence in me but at this stage of my development this button is here for comedic purposes only. If you would like to get in touch please use the contact page. I would love to hear from you.")
+}
+
+
+function displayAnotherFunny() {
+    alert("One day they will sort something out. Just not yet")
 }

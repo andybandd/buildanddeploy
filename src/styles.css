@@ -1,30 +1,57 @@
-library.add 
-
 body {
     background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #e0e0e0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
+.logo { 
+    height: 45px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+}
+
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        
+    }
+
+    ul li a {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
 section {
     width: 100%;
-    /*background-image: linear-gradient(red, yellow);*/
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px 0 0 0;
 }
 
 .date {
-    margin: 0 0 0 30px;
+    background-color: white;
+    padding-left: 30px;
     }
 
 /* .aboutMe inherits styling of div */
 .hero {
+    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,7 +61,7 @@ section {
 .styled-break {
     width: 30px;
     height: 5px;
-    background-color: #a17df4;
+    background-color: #4e2020;
     margin: 30px 0 30px 0;
 }
 
@@ -55,9 +82,17 @@ section {
     font-size: 35px;
 }
 
+#socialsbox {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
 .socials {
-	flex: display;
-    width: 30px;
+	width: 30px;
     height: 30px;
 	border-radius: 50px;
     background-color: transparent;
@@ -89,20 +124,6 @@ section {
     color: #ffffff;
     text-transform: uppercase;
 	text-align: center;
-   /* line-height: 2.5;
-    width: 130px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(220, 0, 0, 1);
-    background-image: linear-gradient(to top left,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.2) 30%,
-    rgba(0,0,0,0)
-    );
-    box-shadow: inset 2px 2 px 3px rgba(255,255,255,0.6),
-     inset -2px -2px 3px rgba(0,0,0,0.6);*/
 }
 
 .button:hover {
@@ -130,33 +151,17 @@ section {
     }
 }
 
-form {
-    margin: 0 0 40px 0;
-}
 
-.input-section {
-    margin: 20px 0;
-    display: flex;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5px 0 0;
-}
 
 footer {
-    background-color: grey;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 50px;
     display: flex;
+    padding: 15px;
     justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
-/*    footer {
-        background-color: white;
-    }*/
-}
+
 
 a {
     text-decoration: none;
@@ -171,70 +176,24 @@ a:active {
     color: black;
 }
 
-nav {
-    width: 100%;
-    height: 50px;
+
+
+
+.input-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
-    padding-right: 10px;
-    justify-content: space-between;
 }
 
-
-
-.logo { 
-    height: 45px;
-    padding-bottom: 10px;
-    margin-left: 25px;
-}
-
-
-li {
-    margin-left: 25px;
-}
-
-
-
-.hamburger {
-    border: 0;
-   background-color: transparent;
-    width: 30px;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
-/* Nav bar to disappear when width screen width under 550px */
-.nav-bar {
-    display: none;
-}
-
-.nav-bar.show {
+.input-group {
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 
-.nav-bar.li {
+.contact-main {
     background-color: white;
+   padding-bottom: 20px;
 }
 
-/* When width above 550px hamburger disappears and nav bar comes back*/
-@media only screen and (min-width: 550px) {
-    .hamburger {
-        display: none;
-    }
 
-    .nav-bar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        list-style-type: none;
-        text-transform: uppercase;
-        font-size: 12px;
-    }
-    .nav-bar.li {
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-    }
-}
